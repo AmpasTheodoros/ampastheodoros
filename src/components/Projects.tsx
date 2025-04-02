@@ -11,50 +11,50 @@ const Projects = () => {
   
   const projects = [
     {
-      title: 'AI Customer Analysis Platform',
-      description: 'A comprehensive SaaS platform that uses AI to analyze customer behavior patterns.',
-      tags: ['AI', 'SaaS', 'Data Analysis'],
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
+      title: 'Ampassador: Compliance-as-a-Service',
+      description: 'Simplify Compliance with One-Click Solutions A powerful SaaS tool that automates compliance tracking, alerts, and reporting for startups and SMBs',
+      tags: ['AI', 'SaaS', 'Compliance'],
+      image: '/lovable-uploads/ampassador.jpg',
       category: 'AI',
       icon: <SquareCode className="text-gold" size={32} />
     },
     {
-      title: 'Business Growth Mentor Program',
-      description: 'Structured mentorship program for tech startups looking to scale.',
-      tags: ['Mentorship', 'Business Strategy'],
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
+      title: 'Heatmap.Click: Optimize UX with Real Insights',
+      description: 'See Where Users Click — and Why They Don’t',
+      tags: ['UX', 'Analytics'],
+      image: '/lovable-uploads/heatmap.jpg',
       category: 'Business',
       icon: <SquareCheck className="text-gold" size={32} />
     },
     {
-      title: 'Efficiency AI Implementation',
-      description: 'Custom AI solution for manufacturing that optimized production processes.',
-      tags: ['AI Implementation', 'Optimization'],
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+      title: 'ContentHive: AI-Powered Content Bot for Hackathons',
+      description: 'Create, Schedule, and Share with Ease Your all-in-one Discord bot for generating and managing hackathon content. Perfect for teams, judges',
+      tags: ['AI Implementation', 'Automation'],
+      image: '/lovable-uploads/content-hive.jpg',
       category: 'AI',
       icon: <SquareCode className="text-gold" size={32} />
     },
     {
-      title: 'Lablab.ai Contribution',
-      description: 'Development of AI tutorials and resources for the lablab.ai platform.',
+      title: 'Creating WordPress Plugins and Integrating AI: My Story',
+      description: 'This project reflects my passion for merging creativity with technology. I set out to simplify the process of building WordPress plugins while integrating AI inspired by my own journey of tackling challenges and finding innovative solutions. It’s more than just code it’s about empowering others to turn their ideas into realityThis',
       tags: ['Education', 'AI'],
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
+      image: 'https://media.licdn.com/dms/image/sync/v2/D4E27AQFoBOU2QZLp8Q/articleshare-shrink_800/articleshare-shrink_800/0/1715714074312?e=1744160400&v=beta&t=XnfA-sIPXU7FmS0T_EF__2lgdyJuFULMfYN1Gf0bZis',
       category: 'Education',
       icon: <SquareCheck className="text-gold" size={32} />
     },
     {
-      title: 'SaaS Marketing Dashboard',
-      description: 'Real-time analytics dashboard for SaaS marketing campaigns.',
+      title: 'Cillers Hackathon Podcast - Theodoros Ampas',
+      description: 'I had the incredible opportunity to share my story on the Cillers Podcast: World Class Hackathons hosted by Per Lange to discuss my journey as a technical mentor at lablab.ai 🚀 ',
       tags: ['SaaS', 'Analytics'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+      image: 'https://i.scdn.co/image/ab67656300005f1fd5dea1c5014a608a2445a5d1',
       category: 'SaaS',
       icon: <SquareCode className="text-gold" size={32} />
     },
     {
-      title: 'Business Strategy Workshop',
-      description: 'Conducted workshops helping businesses adopt AI technologies.',
+      title: 'SimplySites: Websites + AI Integration Made Simple',
+      description: 'From landing pages to full AI-powered platforms SimplySites helps businesses launch professional websites with built-in intelligence',
       tags: ['Business', 'Education'],
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/Screenshot_1.png',
       category: 'Business',
       icon: <SquareCheck className="text-gold" size={32} />
     },

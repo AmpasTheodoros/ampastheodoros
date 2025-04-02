@@ -5,46 +5,41 @@ import { Card, CardContent } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      position: 'AI Solutions Specialist',
-      company: 'TechInnovate Solutions',
-      period: '2021 - Present',
-      description: 'Leading AI implementation projects for enterprise clients, focusing on business process optimization and growth strategies.'
+      position: 'Mentor (Hackathons)',
+      company: 'lablab.ai',
+      period: 'Jan 2023 - 2025',
+      description: 'Mentored participants in over 100 AI hackathons with 10,000+ total attendees guiding teams through project ideation and presentation skills'
     },
     {
-      position: 'SaaS Product Developer',
-      company: 'DataFlow Systems',
-      period: '2019 - 2021',
-      description: 'Developed and launched multiple SaaS products focusing on data analysis and business intelligence for SMEs.'
+      position: 'Mentor (Startups)',
+      company: 'lablab.ai NEXT Program',
+      period: 'Oct 2023 - 2025',
+      description: 'Supported 10+ AI startup teams including AUTODERM and Orbit8 with product development business model refinement'
     },
     {
-      position: 'Business Technology Mentor',
-      company: 'Startup Accelerator Program',
-      period: '2018 - Present',
-      description: 'Providing mentorship to technology startups on product development, market strategy, and scalable architecture.'
+      position: 'Web Developer/Designer (Volunteer)',
+      company: 'InfinityGreece',
+      period: 'Feb 2022 - Present',
+      description: 'Managed 24 WordPress websites and ensured consistent UX for 250+ volunteers across various community events.'
     },
     {
-      position: 'Research Associate',
-      company: 'Aristotle University of Thessaloniki',
-      period: '2017 - 2019',
-      description: 'Conducted research on practical applications of machine learning in business environments.'
+      position: 'IT Member (Volunteer)',
+      company: 'EESTEC',
+      period: 'Nov 2021 - Present',
+      description: 'Resolved over 50 technical issues, optimized WordPress infrastructure, and organized 5 tech workshops for 200+ students.'
     }
   ];
 
   const education = [
     {
-      degree: 'MSc in Artificial Intelligence',
-      institution: 'Aristotle University of Thessaloniki',
-      period: '2015 - 2017'
-    },
-    {
       degree: 'BSc in Computer Science',
       institution: 'Aristotle University of Thessaloniki',
-      period: '2011 - 2015'
+      period: '2020 - 2025'
     },
     {
       degree: 'AI Innovation Certification',
       institution: 'lablab.ai',
-      period: '2020'
+      period: '2023'
     }
   ];
 
