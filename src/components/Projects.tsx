@@ -51,10 +51,10 @@ const Projects = () => {
       icon: <SquareCode className="text-gold" size={32} />
     },
     {
-      title: 'SimplySites: Websites + AI Integration Made Simple',
-      description: 'From landing pages to full AI-powered platforms SimplySites helps businesses launch professional websites with built-in intelligence',
-      tags: ['Business', 'Education'],
-      image: '/lovable-uploads/Screenshot_1.png',
+      title: 'Webijou: Digital Luxury for Jewelry Brands',
+      description: 'A bespoke website design studio tailored for high-end jewelry maisons. Inspired by Cartier, Boucheron, and Van Cleef & Arpels, Webijou delivers exclusivity and craftsmanship through premium digital experiences.',
+      tags: ['Luxury', 'Design', 'Web Development'],
+      image: '/lovable-uploads/67ed6341892c4c4fda704cc0.jpg',
       category: 'Business',
       icon: <SquareCheck className="text-gold" size={32} />
     },
