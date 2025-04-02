@@ -18,7 +18,7 @@ const Footer = () => {
           
           <div className="flex space-x-4 mb-6 md:mb-0">
             <a 
-              href="https://linkedin.com/in/theodorosampas" 
+              href="https://www.linkedin.com/in/theodoros-ampas-72a517203/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-gold transition-colors duration-300"
@@ -27,7 +27,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:theodoros@example.com" 
+              href="mailto:theodor.ampas@gmail.com" 
               className="hover:text-gold transition-colors duration-300"
               aria-label="Email"
             >

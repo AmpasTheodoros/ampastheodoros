@@ -32,22 +32,22 @@ const Contact = () => {
                   <ContactItem 
                     icon={<Mail className="text-gold" />} 
                     label="Email"
-                    value="theodoros@example.com"
-                    link="mailto:theodoros@example.com"
+                    value="theodor.ampas@gmail.com"
+                    link="mailto:theodor.ampas@gmail.com"
                   />
                   
                   <ContactItem 
                     icon={<Globe className="text-gold" />} 
                     label="Website"
-                    value="theodoros-ampas.com"
-                    link="https://theodoros-ampas.com"
+                    value="theodorosampas.com"
+                    link="https://theodorosampas.com"
                   />
                   
                   <ContactItem 
                     icon={<Linkedin className="text-gold" />} 
                     label="LinkedIn"
-                    value="linkedin.com/in/theodorosampas"
-                    link="https://linkedin.com/in/theodorosampas"
+                    value="linkedin.com/in/theodoros-ampas"
+                    link="https://www.linkedin.com/in/theodoros-ampas-72a517203/"
                   />
                 </div>
                 

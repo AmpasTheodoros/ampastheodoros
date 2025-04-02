@@ -1,8 +1,8 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,14 @@ const Navbar = () => {
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#contact">Contact</NavLink>
+          <Button 
+            variant="default"
+            size="sm"
+            className="bg-gold hover:bg-gold-light text-white transition-all duration-300"
+            asChild
+          >
+            <a href="#contact">Contact</a>
+          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -48,7 +55,20 @@ const Navbar = () => {
         <MobileNavLink href="#skills" onClick={toggleMenu}>Skills</MobileNavLink>
         <MobileNavLink href="#projects" onClick={toggleMenu}>Projects</MobileNavLink>
         <MobileNavLink href="#experience" onClick={toggleMenu}>Experience</MobileNavLink>
-        <MobileNavLink href="#contact" onClick={toggleMenu}>Contact</MobileNavLink>
+        <div className="pt-4">
+          <Button 
+            variant="default"
+            className="bg-gold hover:bg-gold-light text-white w-full transition-all duration-300"
+            asChild
+          >
+            <a 
+              href="#contact" 
+              onClick={toggleMenu}
+            >
+              Contact
+            </a>
+          </Button>
+        </div>
       </div>
     </header>
   );

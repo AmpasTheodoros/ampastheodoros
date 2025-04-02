@@ -82,20 +82,6 @@ const Experience = () => {
                 />
               ))}
             </div>
-            
-            <h3 className="text-2xl font-semibold mb-6 text-navy">Affiliations</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <AffiliationCard
-                name="lablab.ai"
-                logo="https://placeholder.svg"
-                role="AI Innovation Contributor"
-              />
-              <AffiliationCard
-                name="Aristotle University of Thessaloniki"
-                logo="https://placeholder.svg"
-                role="Research Affiliate"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -145,25 +131,6 @@ const EducationCard = ({
           <p className="text-gray-700">{institution}</p>
           <p className="text-gray-500 text-sm">{period}</p>
         </div>
-      </CardContent>
-    </Card>
-  );
-};
-
-const AffiliationCard = ({ 
-  name, 
-  logo, 
-  role 
-}: { 
-  name: string; 
-  logo: string; 
-  role: string 
-}) => {
-  return (
-    <Card className="border-none shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center">
-      <CardContent className="p-4 text-center">
-        <p className="text-lg font-semibold text-navy mb-1">{name}</p>
-        <p className="text-sm text-gray-600">{role}</p>
       </CardContent>
     </Card>
   );
