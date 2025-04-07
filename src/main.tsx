@@ -1,5 +1,8 @@
-import { inject } from '@vercel/analytics'; // ✅ Must be at the top
+import { inject } from '@vercel/analytics'; 
 inject(); 
+
+import clarity from "@microsoft/clarity";
+clarity.init(import.meta.env.VITE_CLARITY_ID);
 
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
