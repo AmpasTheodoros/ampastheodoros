@@ -27,8 +27,8 @@ if (typeof window !== 'undefined') {
     };
   
     window.gtag('js', new Date());
-    window.gtag('config', 'G-QZ593Y8PM1');
-  }
+    window.gtag('config', 'G-QZ593Y8PM1', { debug_mode: true });
+}
 
   createRoot(document.getElementById("root")!).render(<App />);
   
