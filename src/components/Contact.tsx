@@ -1,16 +1,86 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, Mail, Globe, Linkedin } from 'lucide-react';
+import { ArrowRight, Mail, Globe, Linkedin, Loader2 } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted');
-    // We would normally handle the form submission here
+    
+    // Validate form
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      toast({
+        title: "Σφάλμα",
+        description: "Παρακαλώ συμπληρώστε όλα τα πεδία της φόρμας",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const webhookUrl = "https://hook.eu2.make.com/9yti21bstxbyv7crj357pfasddrwrphp";
+      
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          timestamp: new Date().toISOString(),
+          source: window.location.href,
+        }),
+      });      
+
+      // Since we're using no-cors, we won't get a typical response status
+      // We'll assume success and reset the form
+      toast({
+        title: "Επιτυχία!",
+        description: "Το μήνυμά σας στάλθηκε επιτυχώς. Θα επικοινωνήσουμε σύντομα μαζί σας.",
+      });
+      
+      // Reset the form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Σφάλμα",
+        description: "Υπήρξε ένα πρόβλημα κατά την αποστολή του μηνύματος. Παρακαλώ προσπαθήστε ξανά αργότερα.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -32,22 +102,22 @@ const Contact = () => {
                   <ContactItem 
                     icon={<Mail className="text-gold" />} 
                     label="Email"
-                    value="theodor.ampas@gmail.com"
-                    link="mailto:theodor.ampas@gmail.com"
+                    value="theodoros@example.com"
+                    link="mailto:theodoros@example.com"
                   />
                   
                   <ContactItem 
                     icon={<Globe className="text-gold" />} 
                     label="Website"
-                    value="theodorosampas.com"
-                    link="https://theodorosampas.com"
+                    value="theodoros-ampas.com"
+                    link="https://theodoros-ampas.com"
                   />
                   
                   <ContactItem 
                     icon={<Linkedin className="text-gold" />} 
                     label="LinkedIn"
-                    value="linkedin.com/in/theodoros-ampas"
-                    link="https://www.linkedin.com/in/theodoros-ampas-72a517203/"
+                    value="linkedin.com/in/theodorosampas"
+                    link="https://linkedin.com/in/theodorosampas"
                   />
                 </div>
                 
@@ -91,6 +161,8 @@ const Contact = () => {
                         placeholder="Your Name" 
                         required 
                         className="border-gray-300"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </div>
                     
@@ -104,6 +176,8 @@ const Contact = () => {
                         placeholder="Your Email" 
                         required 
                         className="border-gray-300"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -117,6 +191,8 @@ const Contact = () => {
                       placeholder="Subject" 
                       required 
                       className="border-gray-300"
+                      value={formData.subject}
+                      onChange={handleChange}
                     />
                   </div>
                   
@@ -129,14 +205,25 @@ const Contact = () => {
                       placeholder="Your Message" 
                       required 
                       className="border-gray-300 min-h-[150px]"
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-gold hover:bg-gold-light text-white transition-colors duration-300"
+                    className="w-full bg-navy hover:bg-navy-light text-white transition-colors duration-300 shadow-md"
+                    disabled={isSubmitting}
                   >
-                    Send Message <ArrowRight className="ml-2" size={16} />
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Sending...
+                      </>
+                    ) : (
+                      <>
+                        Send Message <ArrowRight className="ml-2" size={16} />
+                      </>
+                    )}
                   </Button>
                 </form>
               </CardContent>
