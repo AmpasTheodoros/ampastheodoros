@@ -108,9 +108,11 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-navy/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
-                    View Project
-                  </Button>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
+                      View Project
+                    </Button>
+                  </a>
                 </div>
               </div>
               
