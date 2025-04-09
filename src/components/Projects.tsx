@@ -15,6 +15,7 @@ const Projects = () => {
       description: 'Simplify Compliance with One-Click Solutions A powerful SaaS tool that automates compliance tracking, alerts, and reporting for startups and SMBs',
       tags: ['AI', 'SaaS', 'Compliance'],
       image: '/lovable-uploads/ampassador.jpg',
+      link: 'https://www.ampassador.com',
       category: 'AI',
       icon: <SquareCode className="text-gold" size={32} />
     },
@@ -23,6 +24,7 @@ const Projects = () => {
       description: 'See Where Users Click — and Why They Don’t',
       tags: ['UX', 'Analytics'],
       image: '/lovable-uploads/heatmap.jpg',
+      link: 'https://www.heatmap.click',
       category: 'Business',
       icon: <SquareCheck className="text-gold" size={32} />
     },
@@ -31,6 +33,7 @@ const Projects = () => {
       description: 'Create, Schedule, and Share with Ease Your all-in-one Discord bot for generating and managing hackathon content. Perfect for teams, judges',
       tags: ['AI Implementation', 'Automation'],
       image: '/lovable-uploads/content-hive.jpg',
+      link: 'https://www.content-hive.net',
       category: 'AI',
       icon: <SquareCode className="text-gold" size={32} />
     },
@@ -39,6 +42,7 @@ const Projects = () => {
       description: 'This project reflects my passion for merging creativity with technology. I set out to simplify the process of building WordPress plugins while integrating AI inspired by my own journey of tackling challenges and finding innovative solutions. It’s more than just code it’s about empowering others to turn their ideas into realityThis',
       tags: ['Education', 'AI'],
       image: 'https://media.licdn.com/dms/image/sync/v2/D4E27AQFoBOU2QZLp8Q/articleshare-shrink_800/articleshare-shrink_800/0/1715714074312?e=1744160400&v=beta&t=XnfA-sIPXU7FmS0T_EF__2lgdyJuFULMfYN1Gf0bZis',
+      link: 'https://www.youtube.com/watch?v=uR1NROc6kWQ',
       category: 'Education',
       icon: <SquareCheck className="text-gold" size={32} />
     },
@@ -47,6 +51,7 @@ const Projects = () => {
       description: 'I had the incredible opportunity to share my story on the Cillers Podcast: World Class Hackathons hosted by Per Lange to discuss my journey as a technical mentor at lablab.ai 🚀 ',
       tags: ['SaaS', 'Analytics'],
       image: 'https://i.scdn.co/image/ab67656300005f1fd5dea1c5014a608a2445a5d1',
+      link: 'https://open.spotify.com/episode/0VJfSAbQrec7oc6Rrn0wxP',
       category: 'SaaS',
       icon: <SquareCode className="text-gold" size={32} />
     },
@@ -55,6 +60,7 @@ const Projects = () => {
       description: 'A bespoke website design studio tailored for high-end jewelry maisons. Inspired by Cartier, Boucheron, and Van Cleef & Arpels, Webijou delivers exclusivity and craftsmanship through premium digital experiences.',
       tags: ['Luxury', 'Design', 'Web Development'],
       image: '/lovable-uploads/67ed6341892c4c4fda704cc0.jpg',
+      link: '#',
       category: 'Business',
       icon: <SquareCheck className="text-gold" size={32} />
     },
