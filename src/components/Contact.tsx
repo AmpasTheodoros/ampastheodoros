@@ -158,8 +158,7 @@ const Contact = () => {
                       </label>
                       <Input 
                         id="name" 
-                        placeholder="Your Name" 
-                        required 
+                        placeholder="Your Name"  
                         className="border-gray-300"
                         value={formData.name}
                         onChange={handleChange}
@@ -168,7 +167,7 @@ const Contact = () => {
                     
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium text-gray-700">
-                        Email
+                        Email*
                       </label>
                       <Input 
                         id="email" 
@@ -184,12 +183,11 @@ const Contact = () => {
                   
                   <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-medium text-gray-700">
-                      Subject
+                      Telephone
                     </label>
                     <Input 
                       id="subject" 
                       placeholder="Subject" 
-                      required 
                       className="border-gray-300"
                       value={formData.subject}
                       onChange={handleChange}
@@ -198,7 +196,7 @@ const Contact = () => {
                   
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium text-gray-700">
-                      Message
+                      I want to discuss about*
                     </label>
                     <Textarea 
                       id="message" 
