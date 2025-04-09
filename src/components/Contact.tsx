@@ -187,7 +187,7 @@ const Contact = () => {
                     </label>
                     <Input 
                       id="subject" 
-                      placeholder="Subject" 
+                      placeholder="e.g. +30 6912345678" 
                       className="border-gray-300"
                       value={formData.subject}
                       onChange={handleChange}
@@ -200,7 +200,7 @@ const Contact = () => {
                     </label>
                     <Textarea 
                       id="message" 
-                      placeholder="Your Message" 
+                      placeholder="Let me know what you'd like to discuss..." 
                       required 
                       className="border-gray-300 min-h-[150px]"
                       value={formData.message}
