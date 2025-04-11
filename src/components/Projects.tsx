@@ -1,15 +1,26 @@
 
+
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowUpRight, SquareCode, SquareCheck } from 'lucide-react';
+import { ArrowUpRight, SquareCode, SquareCheck, Waypoints, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
-  const categories = ['All', 'AI', 'Business', 'SaaS', 'Education'];
+  const categories = ['All', 'AI', 'Business', 'SaaS', 'Education', 'Automation'];
   const [activeCategory, setActiveCategory] = useState('All');
   
   const projects = [
+    {
+      title: 'Facebook Lead Ads to SMS Automation',
+      description: 'An automation workflow that instantly notifies Greek businesses via SMS when they receive a new Facebook lead using Make.com and Routee.',
+      tags: ['Automation', 'Make.com', 'Facebook Ads'],
+      image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80',
+      category: 'Automation',
+      icon: <Waypoints className="text-gold" size={32} />,
+      link: '/automation/facebook-lead-ads-sms'
+    },
     {
       title: 'Ampassador: Compliance-as-a-Service',
       description: 'Simplify Compliance with One-Click Solutions A powerful SaaS tool that automates compliance tracking, alerts, and reporting for startups and SMBs',
@@ -108,11 +119,15 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-navy/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
-                      View Project
-                    </Button>
-                  </a>
+                  <Button 
+                    variant="default" 
+                    className="bg-gold hover:bg-gold-light text-white border-2 border-white"
+                    asChild
+                  >
+                    <Link to={project.link}>
+                      View Project <ExternalLink size={16} className="ml-1" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
               
@@ -124,7 +139,7 @@ const Projects = () => {
                 
                 <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
                     <Badge 
                       key={idx} 
@@ -134,6 +149,16 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
+                
+                <Button 
+                  variant="ghost" 
+                  className="p-0 h-auto text-gold hover:text-gold-dark hover:bg-transparent"
+                  asChild
+                >
+                  <Link to={project.link} className="flex items-center">
+                    Learn more <ArrowUpRight size={16} className="ml-1" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           ))}
