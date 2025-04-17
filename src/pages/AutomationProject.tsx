@@ -115,7 +115,7 @@ const AutomationProject = () => {
                   asChild
                 >
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    Get Free Template <ExternalLink size={16} className="ml-2" />
+                    Download the Free Template <ExternalLink size={16} className="ml-2" />
                   </a>
                 </Button>
                 

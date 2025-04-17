@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="absolute right-0 top-0 w-[70%] h-full z-0 overflow-hidden md:block hidden" style={{ right: '-15%' }}>
           <div className="relative w-[80%] h-[120%] -top-[10%] -right-[4%]">
             <img
-              src="/lovable-uploads/ampastheodoros.png"
+              src="/images/ampastheodoros.png"
               alt="Theodoros Ampas"
               className="w-full h-full object-cover object-[10%_0%]"
             />
@@ -37,7 +37,7 @@ const Hero = () => {
           {/* Mobile Profile Image - Fixed position only within the hero section height */}
           <div className="md:hidden w-full h-screen absolute top-0 left-0 z-0">
             <img 
-              src="/lovable-uploads/ampastheodoros.png" 
+              src="/images/ampastheodoros.png" 
               alt="Theodoros Ampas" 
               className="w-full h-full object-cover"
             />
