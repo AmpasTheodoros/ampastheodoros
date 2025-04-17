@@ -35,7 +35,7 @@ const Projects = () => {
       title: 'Simplysites.gr: AI Websites for Professionals',
       description: 'Simplysite helps Greek professionals and small businesses launch beautiful, fast and AI-enhanced websites in under 48 hours — without touching code.',
       tags: ['AI', 'Web Design', 'Small Business'],
-      image: '/images/simplysite-preview.jpg',
+      image: '/images/hero2.png',
       link: 'https://www.simplysites.gr',
       category: 'Business',
       icon: <SquareCheck className="text-gold" size={32} />
