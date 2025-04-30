@@ -16,13 +16,13 @@ I'm a full-stack developer, founder, and mentor with a passion for creating impa
   - **MotivPurpose** – Helping users find their Ikigai with gamified self-discovery
   - **ComeKomsu** – A cultural bridge for Greek & Turkish travelers
 - 📲 Automate marketing workflows using **GoHighLevel**, **Zapier**, and **Routee SMS**
-- 🛠 Mentor at **MindPulse**, organize youth programs & hackathons, and advocate for ethical AI in real-world applications
+- 🛠 Mentor at **Lablab** organize  hackathons and advocate for ethical AI in real-world applications
 
 ---
 
 ## 🧠 Things I'm Into
 
-- 💡 AI, RAG systems, and Reinforcement Learning  
+- 💡 AI, RAG systems and Reinforcement Learning  
 - 🔐 Privacy, compliance & security automation  
 - 🏁 Formula 1, watch collecting & wine tasting  
 - 🏋️ Gym training & personal development  
@@ -33,7 +33,6 @@ I'm a full-stack developer, founder, and mentor with a passion for creating impa
 ## 📸 Projects & Ventures
 
 - 🧠 [Ampassador](https://ampassador.com) – AI-powered compliance platform (MVP under development)
-- 🧳 [ComeKomsu](https://comekomsu.com) – Connecting Greek & Turkish travelers
 - 🌐 [SimplySites.gr](https://simplysites.gr) – My agency for AI + Web
 - 💬 Content-Hive – Discord bot for Hackathons (built with LangChain & Ollama)
 
