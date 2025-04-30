@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# 👋 Hi, I'm Theodor Ampas
 
-## Project info
+I'm a full-stack developer, founder, and mentor with a passion for creating impactful tech — from AI-powered platforms and SaaS tools to community-driven travel and compliance automation.
 
-**URL**: https://lovable.dev/projects/35f9995e-8595-4175-b51e-ead6d5b704d5
+🚀 Currently running [SimplySites.gr](https://simplysites.gr), where we build high-performance websites and integrate cutting-edge AI to help businesses thrive online.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🛠 What I Do
 
-**Use Lovable**
+- ⚙️ Build full-stack apps using **Next.js**, **Node.js**, **Tailwind**, **PostgreSQL**, and **Prisma**
+- 🔐 Use **Clerk**, **LangChain**, **LLMs**, and **PDFKit** to power AI-first SaaS tools
+- 📦 Develop startup-focused platforms like:
+  - **Ampassador** – Compliance-as-a-Service made simple
+  - **Nexus** – A personal intelligence system to track people, places & operations
+  - **MotivPurpose** – Helping users find their Ikigai with gamified self-discovery
+  - **ComeKomsu** – A cultural bridge for Greek & Turkish travelers
+- 📲 Automate marketing workflows using **GoHighLevel**, **Zapier**, and **Routee SMS**
+- 🛠 Mentor at **MindPulse**, organize youth programs & hackathons, and advocate for ethical AI in real-world applications
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/35f9995e-8595-4175-b51e-ead6d5b704d5) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Things I'm Into
 
-**Use your preferred IDE**
+- 💡 AI, RAG systems, and Reinforcement Learning  
+- 🔐 Privacy, compliance & security automation  
+- 🏁 Formula 1, watch collecting & wine tasting  
+- 🏋️ Gym training & personal development  
+- 🌍 Cross-cultural collaboration (🇬🇷🇹🇷)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📸 Projects & Ventures
 
-Follow these steps:
+- 🧠 [Ampassador](https://ampassador.com) – AI-powered compliance platform (MVP under development)
+- 🧳 [ComeKomsu](https://comekomsu.com) – Connecting Greek & Turkish travelers
+- 🌐 [SimplySites.gr](https://simplysites.gr) – My agency for AI + Web
+- 💬 Content-Hive – Discord bot for Hackathons (built with LangChain & Ollama)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📈 GitHub Stats
 
-# Step 3: Install the necessary dependencies.
-npm i
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=theodorampas&show_icons=true&theme=github_dark" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=theodorampas&layout=compact&theme=github_dark" />
+</p>
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 📫 Let's Connect
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- 🔗 [LinkedIn](https://www.linkedin.com/in/theodorampas)
+- 🌐 [SimplySites.gr](https://simplysites.gr)
+- 🐦 [X / Twitter](https://twitter.com/theodorampas)
 
-**Use GitHub Codespaces**
+> "I'm not here to fit in — I'm here to build what doesn't yet exist."
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/35f9995e-8595-4175-b51e-ead6d5b704d5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
