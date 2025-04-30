@@ -38,15 +38,6 @@ I'm a full-stack developer, founder, and mentor with a passion for creating impa
 
 ---
 
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=theodorampas&show_icons=true&theme=github_dark" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=theodorampas&layout=compact&theme=github_dark" />
-</p>
-
----
-
 ## 📫 Let's Connect
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/theodorampas)
